@@ -1,0 +1,12 @@
+# Minimal MetaGPT configuration.
+#
+# MetaGPT requires an `llm` section to import at all (it builds a Config object
+# at import time). This project drives all generation through a local
+# HuggingFace wrapper (LocalHuggingFaceLLM in the experiment runners), so the
+# values below are placeholders that are never used to make API calls — no real
+# API key is required.
+llm:
+  api_type: "openai"
+  model: "gpt-3.5-turbo"
+  base_url: "https://api.openai.com/v1"
+  api_key: "sk-dummy"

@@ -1,0 +1,71 @@
+
+# ── Install order ──────────────────────────────────────────────────────────────
+# metagpt pins several old packages (numpy 1.24, tiktoken 0.6, typing-extensions
+# 4.9, etc.) that are overridden below by the versions required for Gemma 3 /
+# Qwen 3.5. Pip's resolver can get very slow when resolving these simultaneously.
+# Install metagpt alone first to avoid that:
+#
+#   pip install metagpt==0.8.1
+#   pip install -r requirements.txt
+#
+# The resulting pip conflict warnings ("metagpt requires X but you have Y") are
+# expected and benign — the newer versions win and the generation path does not
+# go through metagpt's own LLM stack.
+# ──────────────────────────────────────────────────────────────────────────────
+
+# Core ML/DL
+torch>=2.2.0
+transformers>=4.50.0   # >=4.50 required for Gemma 3
+accelerate>=0.29.0
+scipy
+numpy
+pandas
+scikit-learn
+triton>=3.4.0            # Linux/CUDA only; not needed on CPU-only machines
+
+# Multi-agent framework (provides the metagpt.* APIs the runners import)
+# Install it first if resolution is slow:
+#   pip install metagpt==0.8.1
+metagpt==0.8.1
+httpx<0.28           # metagpt 0.8.1 uses proxies= kwarg removed in httpx 0.28
+
+# LLM APIs & Frameworks
+openai>=1.0.0
+anthropic
+google-generativeai
+
+# Utilities
+tqdm
+python-dotenv
+pyyaml
+tenacity
+aiohttp
+pydantic
+
+# Visualization
+matplotlib
+seaborn
+
+# Notebooks / Interactive
+ipykernel
+ipywidgets
+jupyter
+
+# Others (Found in imports or likely needed)
+datasets
+networkx
+regex>=2025.10.22
+typing-extensions>=4.10.0  # TypeIs (needed by transformers) added in 4.10; metagpt pins 4.9
+tiktoken>=0.7.0            # metagpt pins 0.6.0; >=0.7 needed for Python 3.11+
+gitpython
+termcolor
+fire
+wrapt
+einops
+sentencepiece
+protobuf
+torchvision
+
+# NOTE: `metagpt` (above) pulls in its own dependency tree. If `pip install -r
+# requirements.txt` has trouble resolving it, install MetaGPT first
+# (`pip install metagpt`) and then re-run this file.

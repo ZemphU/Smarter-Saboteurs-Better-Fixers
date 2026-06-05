@@ -1,0 +1,315 @@
+======================================================================
+  McNEMAR'S TEST RESULTS
+======================================================================
+
+======================================================================
+Config: Gemma, Simplified, No-Fix
+======================================================================
+
+  gemma-3-12b-it
+    Contingency: a=90, b=48, c=3, d=23
+    Control Pass@1: 138/164 = 84.1%
+    Malicious Pass@1: 93/164 = 56.7%
+    Discordant: b=48 (broken by attack), c=3 (accidentally fixed)
+    McNemar chi2 = 39.71, p = 2.9523e-10 (chi-squared) ***
+
+  gemma-3-1b-it
+    Contingency: a=58, b=2, c=0, d=104
+    Control Pass@1: 60/164 = 36.6%
+    Malicious Pass@1: 58/164 = 35.4%
+    Discordant: b=2 (broken by attack), c=0 (accidentally fixed)
+    p = 5.0000e-01 (exact binomial) n.s.
+
+  gemma-3-270m-it
+    Contingency: a=15, b=0, c=0, d=149
+    Control Pass@1: 15/164 = 9.1%
+    Malicious Pass@1: 15/164 = 9.1%
+    Discordant: b=0 (broken by attack), c=0 (accidentally fixed)
+    McNemar chi2 = 0.00, p = 1.0000e+00 (N/A (no discordant pairs)) n.s.
+
+  gemma-3-27b-it
+    Contingency: a=96, b=42, c=3, d=23
+    Control Pass@1: 138/164 = 84.1%
+    Malicious Pass@1: 99/164 = 60.4%
+    Discordant: b=42 (broken by attack), c=3 (accidentally fixed)
+    McNemar chi2 = 33.80, p = 6.1079e-09 (chi-squared) ***
+
+  gemma-3-4b-it
+    Contingency: a=89, b=14, c=1, d=60
+    Control Pass@1: 103/164 = 62.8%
+    Malicious Pass@1: 90/164 = 54.9%
+    Discordant: b=14 (broken by attack), c=1 (accidentally fixed)
+    p = 9.7656e-04 (exact binomial) ***
+
+======================================================================
+Config: Gemma, Simplified, QA+Fixer
+======================================================================
+
+  gemma-3-12b-it
+    Contingency: a=126, b=11, c=3, d=24
+    Control Pass@1: 137/164 = 83.5%
+    Malicious Pass@1: 129/164 = 78.7%
+    Discordant: b=11 (broken by attack), c=3 (accidentally fixed)
+    p = 5.7373e-02 (exact binomial) n.s.
+
+  gemma-3-1b-it
+    Contingency: a=58, b=2, c=0, d=104
+    Control Pass@1: 60/164 = 36.6%
+    Malicious Pass@1: 58/164 = 35.4%
+    Discordant: b=2 (broken by attack), c=0 (accidentally fixed)
+    p = 5.0000e-01 (exact binomial) n.s.
+
+  gemma-3-270m-it
+    Contingency: a=15, b=0, c=0, d=149
+    Control Pass@1: 15/164 = 9.1%
+    Malicious Pass@1: 15/164 = 9.1%
+    Discordant: b=0 (broken by attack), c=0 (accidentally fixed)
+    McNemar chi2 = 0.00, p = 1.0000e+00 (N/A (no discordant pairs)) n.s.
+
+  gemma-3-27b-it
+    Contingency: a=131, b=6, c=2, d=25
+    Control Pass@1: 137/164 = 83.5%
+    Malicious Pass@1: 133/164 = 81.1%
+    Discordant: b=6 (broken by attack), c=2 (accidentally fixed)
+    p = 2.8906e-01 (exact binomial) n.s.
+
+  gemma-3-4b-it
+    Contingency: a=97, b=6, c=0, d=61
+    Control Pass@1: 103/164 = 62.8%
+    Malicious Pass@1: 97/164 = 59.1%
+    Discordant: b=6 (broken by attack), c=0 (accidentally fixed)
+    p = 3.1250e-02 (exact binomial) *
+
+======================================================================
+Config: Gemma, Native, No-Fix
+======================================================================
+
+  gemma-3-12b-it
+    Contingency: a=87, b=33, c=3, d=41
+    Control Pass@1: 120/164 = 73.2%
+    Malicious Pass@1: 90/164 = 54.9%
+    Discordant: b=33 (broken by attack), c=3 (accidentally fixed)
+    McNemar chi2 = 25.00, p = 5.7330e-07 (chi-squared) ***
+
+  gemma-3-1b-it
+    Contingency: a=59, b=1, c=0, d=104
+    Control Pass@1: 60/164 = 36.6%
+    Malicious Pass@1: 59/164 = 36.0%
+    Discordant: b=1 (broken by attack), c=0 (accidentally fixed)
+    p = 1.0000e+00 (exact binomial) n.s.
+
+  gemma-3-270m-it
+    Contingency: a=15, b=0, c=0, d=149
+    Control Pass@1: 15/164 = 9.1%
+    Malicious Pass@1: 15/164 = 9.1%
+    Discordant: b=0 (broken by attack), c=0 (accidentally fixed)
+    McNemar chi2 = 0.00, p = 1.0000e+00 (N/A (no discordant pairs)) n.s.
+
+  gemma-3-27b-it
+    Contingency: a=107, b=33, c=4, d=20
+    Control Pass@1: 140/164 = 85.4%
+    Malicious Pass@1: 111/164 = 67.7%
+    Discordant: b=33 (broken by attack), c=4 (accidentally fixed)
+    McNemar chi2 = 22.73, p = 1.8646e-06 (chi-squared) ***
+
+  gemma-3-4b-it
+    Contingency: a=34, b=16, c=32, d=82
+    Control Pass@1: 50/164 = 30.5%
+    Malicious Pass@1: 66/164 = 40.2%
+    Discordant: b=16 (broken by attack), c=32 (accidentally fixed)
+    McNemar chi2 = 5.33, p = 2.0921e-02 (chi-squared) *
+
+======================================================================
+Config: Gemma, Native, QA+Fixer
+======================================================================
+
+  gemma-3-12b-it
+    Contingency: a=116, b=4, c=6, d=38
+    Control Pass@1: 120/164 = 73.2%
+    Malicious Pass@1: 122/164 = 74.4%
+    Discordant: b=4 (broken by attack), c=6 (accidentally fixed)
+    p = 7.5391e-01 (exact binomial) n.s.
+
+  gemma-3-1b-it
+    Contingency: a=59, b=1, c=0, d=104
+    Control Pass@1: 60/164 = 36.6%
+    Malicious Pass@1: 59/164 = 36.0%
+    Discordant: b=1 (broken by attack), c=0 (accidentally fixed)
+    p = 1.0000e+00 (exact binomial) n.s.
+
+  gemma-3-270m-it
+    Contingency: a=15, b=0, c=0, d=149
+    Control Pass@1: 15/164 = 9.1%
+    Malicious Pass@1: 15/164 = 9.1%
+    Discordant: b=0 (broken by attack), c=0 (accidentally fixed)
+    McNemar chi2 = 0.00, p = 1.0000e+00 (N/A (no discordant pairs)) n.s.
+
+  gemma-3-27b-it
+    Contingency: a=131, b=7, c=4, d=22
+    Control Pass@1: 138/164 = 84.1%
+    Malicious Pass@1: 135/164 = 82.3%
+    Discordant: b=7 (broken by attack), c=4 (accidentally fixed)
+    p = 5.4883e-01 (exact binomial) n.s.
+
+  gemma-3-4b-it
+    Contingency: a=68, b=12, c=23, d=61
+    Control Pass@1: 80/164 = 48.8%
+    Malicious Pass@1: 91/164 = 55.5%
+    Discordant: b=12 (broken by attack), c=23 (accidentally fixed)
+    McNemar chi2 = 3.46, p = 6.2979e-02 (chi-squared) n.s.
+
+======================================================================
+Config: Qwen, Simplified, No-Fix
+======================================================================
+
+  Qwen3.5-0.8B
+    Contingency: a=38, b=0, c=0, d=126
+    Control Pass@1: 38/164 = 23.2%
+    Malicious Pass@1: 38/164 = 23.2%
+    Discordant: b=0 (broken by attack), c=0 (accidentally fixed)
+    McNemar chi2 = 0.00, p = 1.0000e+00 (N/A (no discordant pairs)) n.s.
+
+  Qwen3.5-27B
+    Contingency: a=72, b=88, c=0, d=4
+    Control Pass@1: 160/164 = 97.6%
+    Malicious Pass@1: 72/164 = 43.9%
+    Discordant: b=88 (broken by attack), c=0 (accidentally fixed)
+    McNemar chi2 = 88.00, p = 0.0000e+00 (chi-squared) ***
+
+  Qwen3.5-2B
+    Contingency: a=97, b=4, c=0, d=63
+    Control Pass@1: 101/164 = 61.6%
+    Malicious Pass@1: 97/164 = 59.1%
+    Discordant: b=4 (broken by attack), c=0 (accidentally fixed)
+    p = 1.2500e-01 (exact binomial) n.s.
+
+  Qwen3.5-4B
+    Contingency: a=134, b=4, c=0, d=26
+    Control Pass@1: 138/164 = 84.1%
+    Malicious Pass@1: 134/164 = 81.7%
+    Discordant: b=4 (broken by attack), c=0 (accidentally fixed)
+    p = 1.2500e-01 (exact binomial) n.s.
+
+  Qwen3.5-9B
+    Contingency: a=116, b=34, c=0, d=14
+    Control Pass@1: 150/164 = 91.5%
+    Malicious Pass@1: 116/164 = 70.7%
+    Discordant: b=34 (broken by attack), c=0 (accidentally fixed)
+    McNemar chi2 = 34.00, p = 5.5112e-09 (chi-squared) ***
+
+======================================================================
+Config: Qwen, Simplified, QA+Fixer
+======================================================================
+
+  Qwen3.5-0.8B
+    Contingency: a=38, b=0, c=0, d=126
+    Control Pass@1: 38/164 = 23.2%
+    Malicious Pass@1: 38/164 = 23.2%
+    Discordant: b=0 (broken by attack), c=0 (accidentally fixed)
+    McNemar chi2 = 0.00, p = 1.0000e+00 (N/A (no discordant pairs)) n.s.
+
+  Qwen3.5-27B
+    Contingency: a=159, b=1, c=0, d=4
+    Control Pass@1: 160/164 = 97.6%
+    Malicious Pass@1: 159/164 = 97.0%
+    Discordant: b=1 (broken by attack), c=0 (accidentally fixed)
+    p = 1.0000e+00 (exact binomial) n.s.
+
+  Qwen3.5-2B
+    Contingency: a=101, b=0, c=0, d=63
+    Control Pass@1: 101/164 = 61.6%
+    Malicious Pass@1: 101/164 = 61.6%
+    Discordant: b=0 (broken by attack), c=0 (accidentally fixed)
+    McNemar chi2 = 0.00, p = 1.0000e+00 (N/A (no discordant pairs)) n.s.
+
+  Qwen3.5-4B
+    Contingency: a=139, b=0, c=0, d=25
+    Control Pass@1: 139/164 = 84.8%
+    Malicious Pass@1: 139/164 = 84.8%
+    Discordant: b=0 (broken by attack), c=0 (accidentally fixed)
+    McNemar chi2 = 0.00, p = 1.0000e+00 (N/A (no discordant pairs)) n.s.
+
+  Qwen3.5-9B
+    Contingency: a=151, b=1, c=0, d=12
+    Control Pass@1: 152/164 = 92.7%
+    Malicious Pass@1: 151/164 = 92.1%
+    Discordant: b=1 (broken by attack), c=0 (accidentally fixed)
+    p = 1.0000e+00 (exact binomial) n.s.
+
+======================================================================
+Config: Qwen, Native, No-Fix
+======================================================================
+
+  Qwen3.5-0.8B
+    Contingency: a=45, b=3, c=3, d=113
+    Control Pass@1: 48/164 = 29.3%
+    Malicious Pass@1: 48/164 = 29.3%
+    Discordant: b=3 (broken by attack), c=3 (accidentally fixed)
+    p = 1.0000e+00 (exact binomial) n.s.
+
+  Qwen3.5-27B
+    Contingency: a=96, b=64, c=0, d=4
+    Control Pass@1: 160/164 = 97.6%
+    Malicious Pass@1: 96/164 = 58.5%
+    Discordant: b=64 (broken by attack), c=0 (accidentally fixed)
+    McNemar chi2 = 64.00, p = 1.2212e-15 (chi-squared) ***
+
+  Qwen3.5-2B
+    Contingency: a=73, b=22, c=5, d=64
+    Control Pass@1: 95/164 = 57.9%
+    Malicious Pass@1: 78/164 = 47.6%
+    Discordant: b=22 (broken by attack), c=5 (accidentally fixed)
+    McNemar chi2 = 10.70, p = 1.0692e-03 (chi-squared) **
+
+  Qwen3.5-4B
+    Contingency: a=102, b=24, c=9, d=29
+    Control Pass@1: 126/164 = 76.8%
+    Malicious Pass@1: 111/164 = 67.7%
+    Discordant: b=24 (broken by attack), c=9 (accidentally fixed)
+    McNemar chi2 = 6.82, p = 9.0234e-03 (chi-squared) **
+
+  Qwen3.5-9B
+    Contingency: a=117, b=37, c=2, d=8
+    Control Pass@1: 154/164 = 93.9%
+    Malicious Pass@1: 119/164 = 72.6%
+    Discordant: b=37 (broken by attack), c=2 (accidentally fixed)
+    McNemar chi2 = 31.41, p = 2.0887e-08 (chi-squared) ***
+
+======================================================================
+Config: Qwen, Native, QA+Fixer
+======================================================================
+
+  Qwen3.5-0.8B
+    Contingency: a=37, b=7, c=6, d=114
+    Control Pass@1: 44/164 = 26.8%
+    Malicious Pass@1: 43/164 = 26.2%
+    Discordant: b=7 (broken by attack), c=6 (accidentally fixed)
+    p = 1.0000e+00 (exact binomial) n.s.
+
+  Qwen3.5-27B
+    Contingency: a=158, b=0, c=2, d=4
+    Control Pass@1: 158/164 = 96.3%
+    Malicious Pass@1: 160/164 = 97.6%
+    Discordant: b=0 (broken by attack), c=2 (accidentally fixed)
+    p = 5.0000e-01 (exact binomial) n.s.
+
+  Qwen3.5-2B
+    Contingency: a=86, b=9, c=8, d=61
+    Control Pass@1: 95/164 = 57.9%
+    Malicious Pass@1: 94/164 = 57.3%
+    Discordant: b=9 (broken by attack), c=8 (accidentally fixed)
+    p = 1.0000e+00 (exact binomial) n.s.
+
+  Qwen3.5-4B
+    Contingency: a=119, b=9, c=17, d=19
+    Control Pass@1: 128/164 = 78.0%
+    Malicious Pass@1: 136/164 = 82.9%
+    Discordant: b=9 (broken by attack), c=17 (accidentally fixed)
+    McNemar chi2 = 2.46, p = 1.1666e-01 (chi-squared) n.s.
+
+  Qwen3.5-9B
+    Contingency: a=152, b=1, c=1, d=10
+    Control Pass@1: 153/164 = 93.3%
+    Malicious Pass@1: 153/164 = 93.3%
+    Discordant: b=1 (broken by attack), c=1 (accidentally fixed)
+    p = 1.0000e+00 (exact binomial) n.s.

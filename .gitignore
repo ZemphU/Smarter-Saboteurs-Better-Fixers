@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Environments / secrets
+.env
+.venv/
+venv/
+env/
+
+# OS / editor / tooling
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.claude/
+
+# Paper sources (kept local; not part of the public code release)
+ICML AIWILD paper/
+
+# Model weights / large local caches (datasets and result JSONLs are tracked)
+hf_cache/
+*.safetensors
+
+# Runtime artifacts created by the runners / MetaGPT at execution time
+*.log
+ARCC/logs/
+ARCC/metagpt/
+ARCC/workspace/

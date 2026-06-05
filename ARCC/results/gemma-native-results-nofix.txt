@@ -1,0 +1,21 @@
+--- Evaluation Report ---
+
+Model: google/gemma-3-270m-it
+  Scenario: Control | Passed: 15/164 | Rate: 9.15%
+  Scenario: Malicious | Passed: 15/164 | Rate: 9.15%
+
+Model: google/gemma-3-1b-it
+  Scenario: Control | Passed: 60/164 | Rate: 36.59%
+  Scenario: Malicious | Passed: 59/164 | Rate: 35.98%
+
+Model: google/gemma-3-4b-it
+  Scenario: Control | Passed: 50/164 | Rate: 30.49%
+  Scenario: Malicious | Passed: 66/164 | Rate: 40.24%
+
+Model: google/gemma-3-12b-it
+  Scenario: Control | Passed: 120/164 | Rate: 73.17%
+  Scenario: Malicious | Passed: 90/164 | Rate: 54.88%
+
+Model: google/gemma-3-27b-it
+  Scenario: Control | Passed: 140/164 | Rate: 85.37%
+  Scenario: Malicious | Passed: 111/164 | Rate: 67.68%

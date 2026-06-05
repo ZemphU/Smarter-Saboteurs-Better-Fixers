@@ -1,0 +1,21 @@
+--- Evaluation Report ---
+
+Model: Qwen/Qwen3.5-0.8B
+  Scenario: Control | Passed: 48/164 | Rate: 29.27%
+  Scenario: Malicious | Passed: 48/164 | Rate: 29.27%
+
+Model: Qwen/Qwen3.5-2B
+  Scenario: Control | Passed: 95/164 | Rate: 57.93%
+  Scenario: Malicious | Passed: 78/164 | Rate: 47.56%
+
+Model: Qwen/Qwen3.5-4B
+  Scenario: Control | Passed: 126/164 | Rate: 76.83%
+  Scenario: Malicious | Passed: 111/164 | Rate: 67.68%
+
+Model: Qwen/Qwen3.5-9B
+  Scenario: Control | Passed: 154/164 | Rate: 93.90%
+  Scenario: Malicious | Passed: 119/164 | Rate: 72.56%
+
+Model: Qwen/Qwen3.5-27B
+  Scenario: Control | Passed: 160/164 | Rate: 97.56%
+  Scenario: Malicious | Passed: 96/164 | Rate: 58.54%
